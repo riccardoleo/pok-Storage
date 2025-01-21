@@ -15,25 +15,27 @@ public class Controller {
     private CardsRepo cardsRepo;
 
     @GetMapping("/GetCard/allCards")
-    public List<Card> all() {
-        return cardsRepo.findAll();
+    public ResponseEntity<List<Card>> getAllCards() {
+        List<Card> cards = cardsRepo.findAll();
+        return ResponseEntity.ok(cards);
     }
 
     @GetMapping("/GetCard/{id}")
-    public ResponseEntity<Card> findById(@PathVariable String id) {
+    public ResponseEntity<Card> findById(@PathVariable int id) {
         Optional<Card> card = cardsRepo.findById(id);
         return card.map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
-    }
-
-    @PostMapping("/PostCard")
-    public ResponseEntity<Card> postCard(@RequestBody Card card) {
-        Card savedCard = cardsRepo.save(card);
-        return ResponseEntity.ok(savedCard);
     }
 
     @PutMapping("/NewCard")
     public ResponseEntity<Card> newCard(@RequestBody Card card) {
         Card updatedCard = cardsRepo.save(card);
         return ResponseEntity.ok(updatedCard);
+    }
+
+    @DeleteMapping("/deleteCard/{id}")
+    public ResponseEntity<Card> deleteCard(@PathVariable int id) {
+        Card card = cardsRepo.findById(id).orElse(null);
+        cardsRepo.delete(card);
+        return ResponseEntity.ok(card);
     }
 }
