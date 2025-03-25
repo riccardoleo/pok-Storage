@@ -100,6 +100,4 @@ public class Controller {
             return ResponseEntity.status(404).body(Map.of("message", "Utente non trovato"));
         }
     }
-
-
 }
