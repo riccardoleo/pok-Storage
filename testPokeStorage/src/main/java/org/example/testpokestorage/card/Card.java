@@ -14,10 +14,10 @@ public class Card {
     public String localId;
     public String name;
     public String image;
-    public String category;
+    //public String category;
     public String illustrator;
     public String rarity;
-    public boolean[] variant; //normal, reverse, holo firstedition
+    public boolean[] variant; // normal, reverse, holo firstedition
 
 //    @Data
 //    @AllArgsConstructor

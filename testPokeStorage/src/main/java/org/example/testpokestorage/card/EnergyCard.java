@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class EnergyCard extends Card {
 
-    public String category;
+    //public String category;
     public String effect;
     public String energyType;
 

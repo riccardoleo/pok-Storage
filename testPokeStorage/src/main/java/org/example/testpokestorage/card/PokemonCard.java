@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 public class PokemonCard extends Card {
 
 
-    public String category;
+    //public String category;
     public int[] dexId;
     public int hp;
     public String[] types;
@@ -21,7 +21,7 @@ public class PokemonCard extends Card {
     public String level;
     public String stage;
     public String suffix;
-    public String[] item; //name, effect
+    public String[] item; // name, effect
 
 //    public static class Item{
 //        public String name;
