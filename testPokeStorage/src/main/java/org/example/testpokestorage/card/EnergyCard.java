@@ -8,7 +8,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class EnergyCard {
+
     public String category;
     public String effect;
     public String energyType;
+
 }

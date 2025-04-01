@@ -16,8 +16,9 @@ public class CommonFields {
     public String name;
     public String image;
     public String category;
-    public String illustratior;
+    public String illustrator;
     public String rarity;
+
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
@@ -25,25 +26,34 @@ public class CommonFields {
         public Boolean normal;
         public Boolean reverse;
         public Boolean holo;
-        public Boolean firstedition;
+        public Boolean firstEdition;
     }
+
     public Variant variant;
+
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
-    public static class SetBrief{
+    public static class SetBrief {
+
         public String id;
         public String name;
         public String logo;
         public String Symbol;
+
+
         @Data
         @AllArgsConstructor
         @NoArgsConstructor
-        public class CardCount{
+        public static class CardCount {
+
             public int total;
             public int official;
+
         }
     }
+
     public SetBrief setBrief;
     public SetBrief.CardCount cardCount;
+
 }

@@ -8,7 +8,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class TrainerCard{
+
     public String category;
     public String effect;
     public String trainerType;
+
 }

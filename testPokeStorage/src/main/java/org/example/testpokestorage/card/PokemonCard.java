@@ -11,18 +11,24 @@ import java.util.ArrayList;
 @AllArgsConstructor
 @NoArgsConstructor
 public class PokemonCard extends CommonFields {
+
+
     public String category;
-    public ArrayList dexId;
+    public int[] dexId;
     public int hp;
-    public ArrayList types;
+    public String[] types;
     public String evolveForm;
     public String description;
     public String level;
     public String stage;
     public String suffix;
-    public class Item{
+
+
+    public static class Item{
         public String name;
         public String effect;
+
     }
+
     public Item items;
 }
