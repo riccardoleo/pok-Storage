@@ -4,13 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import java.util.ArrayList;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class PokemonCard extends CommonFields {
+public class PokemonCard extends Card {
 
 
     public String category;
@@ -22,13 +21,13 @@ public class PokemonCard extends CommonFields {
     public String level;
     public String stage;
     public String suffix;
+    public String[] item; //name, effect
 
-
-    public static class Item{
-        public String name;
-        public String effect;
-
-    }
-
-    public Item items;
+//    public static class Item{
+//        public String name;
+//        public String effect;
+//
+//    }
+//
+//    public Item items;
 }
