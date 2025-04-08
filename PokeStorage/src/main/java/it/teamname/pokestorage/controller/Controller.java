@@ -1,7 +1,7 @@
 package it.teamname.pokestorage.controller;
 
-import org.example.testpokestorage.repository.UsersRepo;
-import org.example.testpokestorage.user.User;
+import it.teamname.pokestorage.repository.UsersRepo;
+import it.teamname.pokestorage.user.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

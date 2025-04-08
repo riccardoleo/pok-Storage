@@ -1,6 +1,6 @@
 package it.teamname.pokestorage.repository;
 
-import org.example.testpokestorage.user.User;
+import it.teamname.pokestorage.user.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import java.util.Optional;
 public interface UsersRepo extends MongoRepository<User, String> {
