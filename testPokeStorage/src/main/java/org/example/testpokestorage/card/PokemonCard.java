@@ -30,4 +30,5 @@ public class PokemonCard extends Card {
 //    }
 //
 //    public Item items;
+
 }
